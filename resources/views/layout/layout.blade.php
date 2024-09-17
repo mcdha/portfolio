@@ -16,24 +16,21 @@
 
             @include('pages.header')
 
+            @include('pages.projects')
+
+            @include('pages.education_work')
+
             @include('pages.services')
 
             @include('pages.price_plans')
 
             @include('pages.testimonials')
 
-            @include('pages.projects')
-
-            @include('pages.education_work')
-
             @include('pages.newsletters')
 
             @include('pages.contacts')
 
-            @include('pages.getintouch')
-
-
-
+          
             <div class="container-fluid">
               <div class="row">
                 <div class="col-6 col-lg-3">
