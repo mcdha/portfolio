@@ -27,7 +27,7 @@
         <div class="col-md-3 col-6">
             <div class="art-counter-frame">
                 <div class="art-counter-box">
-                <span class="art-counter">10</span><span class="art-counter-plus">+</span>
+                <span class="art-counter">2</span><span class="art-counter-plus">+</span>
                 </div>
                 <h6>Years Experience</h6>
             </div>
@@ -35,7 +35,7 @@
         <div class="col-md-3 col-6">
             <div class="art-counter-frame">
                 <div class="art-counter-box">
-                <span class="art-counter">143</span>
+                    <span class="art-counter">{{ $projectsCount }}</span>
                 </div>
                 <h6>Completed Projects</h6>
             </div>

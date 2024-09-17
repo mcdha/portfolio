@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProjectController; // Import the ProjectController
 
-Route::get('/', function () {
-    return view('layout.layout');
-});
+
+
+Route::get('/',[ProjectController::class, 'index']);
