@@ -20,7 +20,7 @@
 
             @include('pages.education_work')
 
-            @include('pages.services')
+            {{-- @include('pages.services') --}}
 
             @include('pages.price_plans')
 

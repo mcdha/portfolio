@@ -136,9 +136,9 @@
         <div class="art-ls-divider"></div>
 
         <div class="art-links-frame p-15-15">
-          <a href="files/cv.txt" class="art-link" download>Download cv <i class="fas fa-download"></i></a>
-
+          <a href="{{ asset('assets/img/mc/pdf/Pagaragan_Mc.Dharnel P.pdf') }}" class="art-link" download="Pagaragan_Mc_Dharnel_P.pdf">Download CV <i class="fas fa-download"></i></a>
         </div>
+        
       </div>
 
     <div class="art-ls-social">

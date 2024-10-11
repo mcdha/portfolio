@@ -43,7 +43,7 @@
         <div class="col-md-3 col-6">
             <div class="art-counter-frame">
                 <div class="art-counter-box">
-                <span class="art-counter">114</span>
+                <span class="art-counter">{{ $testimonialsCount }}</span>
                 </div>
                 <h6>Happy Customers</h6>
             </div>
