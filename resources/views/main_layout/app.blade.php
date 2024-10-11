@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="{{asset('assets/css/plugins/font-awesome.min.css')}}">
   <link rel="stylesheet" href="{{asset('assets/css/plugins/swiper.min.css')}}">
   <link rel="stylesheet" href="{{asset('assets/css/plugins/fancybox.min.css')}}">
+  <!-- Toastr CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
   <!-- main css -->
   <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 
@@ -47,11 +49,25 @@
 <script src="{{asset('assets/js/plugins/isotope.min.js')}}"></script>
 <script src="{{asset('assets/js/plugins/fancybox.min.js')}}"></script>
 <script src="{{asset('assets/js/plugins/swup.min.js')}}"></script>
+<!-- Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <!-- main js -->
 <script src="{{asset('assets/js/main.js')}}"></script>
 
+<script src="//code.tidio.co/upyeprq40dqmdicgqpo3weel9icsnwug.js" async></script>
+
 {{-- FOR THE PROJECTS IMAGES__________________________________________________ --}}
 <script>
+
+@if(Session::has('success'))
+    toastr.success("{{ Session::get('success') }}");
+@endif
+
+@if(Session::has('error'))
+    toastr.error("{{ Session::get('error') }}");
+@endif
+
+
   $(document).ready(function() {
     $('[data-fancybox-trigger]').click(function(e) {
       e.preventDefault();
@@ -82,6 +98,36 @@
       });
     });
   });
+
+
+
+
+
+  $('#getintouch_form').on('submit', function(e) {
+    e.preventDefault();
+
+    let formData = new FormData(this);
+
+    $.ajax({
+      url: '{{ route('getintouch.submit') }}',
+      type: 'POST',
+      data: formData,
+      contentType: false,
+      processData: false,
+      success: function(response) {
+        toastr.success(response.success);
+
+        setTimeout(function() {
+                location.reload(); // Reload the page after 5 seconds
+            }, 5000);
+            
+      },
+      error: function(response) {
+        toastr.error('There was an error submitting the form.');
+      }
+    });
+  });
+
 </script>
 
 
