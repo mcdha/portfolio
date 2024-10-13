@@ -42,11 +42,11 @@
           </div>
       </div>
       <div class="col-lg-12">
-          <div class="art-slider-navigation">
-              <div class="art-sn-left">
+          <div class="art-slider-navigation d-flex justify-content-end">
+              {{-- <div class="art-sn-left">
                   <div class="swiper-pagination"></div>
-              </div>
-              <div class="art-sn-right">
+              </div> --}}
+              <div class="art-sn-right ">
                   <div class="art-slider-nav-frame">
                       <div class="art-slider-nav art-testi-swiper-prev"><i class="fas fa-chevron-left"></i></div>
                       <div class="art-slider-nav art-testi-swiper-next"><i class="fas fa-chevron-right"></i></div>

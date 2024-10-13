@@ -26,7 +26,7 @@
 
             @include('pages.testimonials')
 
-            @include('pages.newsletters')
+            @include('pages.quotes')
 
             @include('pages.contacts')
 

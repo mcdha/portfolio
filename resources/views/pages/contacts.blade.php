@@ -9,7 +9,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-6">
         <div class="art-a art-card">
           <div class="art-table p-15-15">
             <ul>
@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-6">
         <div class="art-a art-card">
           <div class="art-table p-15-15">
             <ul>
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4">
+      {{-- <div class="col-lg-4">
         <div class="art-a art-card">
           <div class="art-table p-15-15">
             <ul>
@@ -61,7 +61,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> --}}
 
      @include('pages.getintouch')
 
