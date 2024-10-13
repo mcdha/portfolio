@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             PricePlanSeeder::class,
             GetInTouchSeeder::class,   
-            ProjectSeeder::class, 
+            ProjectSeeder::class,
+            QuoteSeeder::class,
         ]);
 
         // User::factory(10)->create();
